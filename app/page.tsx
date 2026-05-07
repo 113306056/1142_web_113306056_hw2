@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Page() {
   const [count, setCount] = useState(0);
@@ -10,8 +11,8 @@ export default function Page() {
 
   return (
     <>
-    <div>說{count}次hello</div>
-    <button onClick={() => setCount(count + 1)}>說一次hello</button>
+    歡迎
+    <Link href="/posts/first-post">this page!</Link>
     </>
   );
 }
